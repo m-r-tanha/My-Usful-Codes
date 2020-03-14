@@ -25,6 +25,7 @@ def counting(n):
   n+=1
    
 ```
+## Default Function
 
 ```python
  def add (a, b, a) -> float: print(a+b+c)
