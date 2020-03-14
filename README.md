@@ -23,3 +23,7 @@ def counting(n):
   n+=1
    
 ```
+
+```python
+ def add (a, b, a) -> float: print(a+b+c)
+ ```
