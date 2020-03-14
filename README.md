@@ -30,3 +30,11 @@ def counting(n):
 ```python
  def add (a, b, a) -> float: print(a+b+c)
  ```
+
+## Open a file with "with"
+#### with help us to close a open whenever we don't want thsi function
+
+'''python
+with open('path.txt') as f:
+  read_file = f.read()
+ '''
