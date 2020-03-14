@@ -9,7 +9,7 @@ import time
 from functools import wraps
 
 def time_of_excecution(func):
-  @wraps func
+  @wraps (func)
   def wrapper (*args, **kwargs):
     t_s=time.time()
     result=func(*args, **kwargs)
