@@ -4,6 +4,8 @@
 import itertools
 [f[i][j] for i,j in itertools.product(range(t), range(int(n)))]
 ```
+#Decorative Wrapper
+
 ```python
 import time
 from functools import wraps
