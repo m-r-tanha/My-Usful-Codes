@@ -39,12 +39,14 @@ with open('path.txt') as f:
   read_file = f.read()
  ```
 
-## Request
+## Request and Post
 
 ```python
 import requests
-r = requests.get("URL")
-print(r.text)
+mydata={'name':'Mohammad','email':'mohammad@exlampl.com'} #the require data can be seen in browser inspector
+r_g = requests.get("URL")
+r_p = request.post("URL") #it is usful for API
+print(r_g.text)
 f=open("./page.html","w+")
-f.write(r.text)
+f.write(r_g.text)
  ```
