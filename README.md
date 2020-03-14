@@ -34,7 +34,7 @@ def counting(n):
 ## Open a file with "with"
 #### with help us to close a open whenever we don't want thsi function
 
-'''python
+```python
 with open('path.txt') as f:
   read_file = f.read()
- '''
+ ```
