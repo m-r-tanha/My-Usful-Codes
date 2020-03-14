@@ -45,7 +45,7 @@ with open('path.txt') as f:
 import requests
 mydata={'name':'Mohammad','email':'mohammad@exlampl.com'} #the require data can be seen in browser inspector
 r_g = requests.get("URL")
-r_p = request.post("URL") #it is usful for API
+r_p = request.post("URL") #it is useful for API
 print(r_g.text)
 f=open("./page.html","w+")
 f.write(r_g.text)
