@@ -38,3 +38,13 @@ def counting(n):
 with open('path.txt') as f:
   read_file = f.read()
  ```
+
+## Request
+
+```python
+import requests
+r = requests.get("URL")
+print(r.text)
+f=open("./page.html","w+")
+f.write(r.text)
+ ```
