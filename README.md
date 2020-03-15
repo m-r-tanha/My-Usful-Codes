@@ -69,3 +69,8 @@ Return type: < type 'enumerate' >
 [(0, 'eat'), (1, 'sleep'), (2, 'repeat')]
 [(2, 'g'), (3, 'e'), (4, 'e'), (5, 'k')]
  ```
+## Pivot_Table
+
+```python
+Table=pd.pivot_table(data,values=['CSSR','DCR],index=['Province'], aggfunc={'CSSR':[max, min],'DCR': [lambda x: np.percentage(x,90)]}
+```
