@@ -19,9 +19,11 @@ def time_of_excecution(func):
     print(func.__name__,t_e-t_s)
     return result
   return wrapper
+  
 @time_of_excecution
+
 def counting(n):
-  while n<500000
+  while (n<500000):
   n+=1
    
 ```
