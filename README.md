@@ -118,3 +118,10 @@ and append doesn't work on array
 
 # Rgression and Classification
 ![class_regra](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/classification_regression.png)
+
+# Read CSV file from a link
+```python
+link=https://doc.google.com/...
+source=StringIO.StringIO(requests.get(link).content))
+data=pd.read_csv(source)
+```
