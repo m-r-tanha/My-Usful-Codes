@@ -110,10 +110,10 @@ func(2,4,56)
 ```
 # Append, Concatenate, Vstack
 
-![test] (https://github.com/m-r-tanha/My-Usful-Codes/blob/master/append.png)
+![test](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/append.png)
 
-the vstack is the correct answer
-the concatenate works on two same dimensional array
+the vstack is the correct answer, 
+the concatenate works on two same dimensional array, 
 and append doesn't work on array
 
 # Rgression and Classification
