@@ -94,5 +94,5 @@ print(f'{s1}{s2})
 ```python
 string = "geeks for geeks geeks geeks geeks" 
 print(string.replace("geeks", "GeeksforGeeks", 3)) 
-#### output: GeeksforGeeks for GeeksforGeeks GeeksforGeeks geeks geeks
+    # output: GeeksforGeeks for GeeksforGeeks GeeksforGeeks geeks geeks
 ```
