@@ -134,3 +134,11 @@ array([[2, 1, 4],
        [1, 2, 3],
        [0, 5, 2]])
 ```
+# Create a Series from a list, numpy array and dictionary
+```python
+mylist=list('abcdefghijklmnopqrstuvwxyz')
+myarr=np.arange(26)
+mydict=dict(zip(mylist,myarr))
+ser1=pd.Series(mylist)
+ser2=pd.Series(myarr)
+ser3=pd.Series(mydict)
