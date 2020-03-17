@@ -169,3 +169,8 @@ ser_u[~ser_u.isin(ser_i)]
 0    4
 1    5
 ```
+# How to reverese the rows of a data frame
+```python
+ df1=pd.DataFrame(np.arange(25).reshape(5,-1))
+ df1.iloc[::-1,:]
+ ```
