@@ -89,3 +89,10 @@ print("{}{}".format(s1,s2)
 print(f'{s1}{s2})
 
 ```
+
+# General Code
+```python
+string = "geeks for geeks geeks geeks geeks" 
+print(string.replace("geeks", "GeeksforGeeks", 3)) 
+#### output: GeeksforGeeks for GeeksforGeeks GeeksforGeeks geeks geeks
+```
