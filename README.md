@@ -108,3 +108,11 @@ def func (*var):
 func(1)
 func(2,4,56)
 ```
+# Append, Contatenate, Vstack
+![test] (https://github.com/m-r-tanha/My-Usful-Codes/blob/master/append.png)
+the vstack is the correct answer
+the concatenate works on two same dimensional array
+and append doesn't work on array
+
+# Rgression and Classification
+![class_regra](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/classification_regression.png)
