@@ -108,8 +108,10 @@ def func (*var):
 func(1)
 func(2,4,56)
 ```
-# Append, Contatenate, Vstack
+# Append, Concatenate, Vstack
+
 ![test] (https://github.com/m-r-tanha/My-Usful-Codes/blob/master/append.png)
+
 the vstack is the correct answer
 the concatenate works on two same dimensional array
 and append doesn't work on array
