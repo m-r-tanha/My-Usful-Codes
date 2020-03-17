@@ -95,4 +95,6 @@ print(f'{s1}{s2})
 string = "geeks for geeks geeks geeks geeks" 
 print(string.replace("geeks", "GeeksforGeeks", 3)) 
     # output: GeeksforGeeks for GeeksforGeeks GeeksforGeeks geeks geeks
+list.remove(element) # Remove the first element in the list
+del list[start:end] # Delete a range of elements
 ```
