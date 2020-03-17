@@ -98,3 +98,13 @@ print(string.replace("geeks", "GeeksforGeeks", 3))
 list.remove(element) # Remove the first element in the list
 del list[start:end] # Delete a range of elements
 ```
+
+# Define a function that takes variable number of arguments
+```python
+def func (*var):
+  for i in var:
+    print(i)
+
+func(1)
+func(2,4,56)
+```
