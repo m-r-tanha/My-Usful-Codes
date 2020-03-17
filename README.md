@@ -142,3 +142,30 @@ mydict=dict(zip(mylist,myarr))
 ser1=pd.Series(mylist)
 ser2=pd.Series(myarr)
 ser3=pd.Series(mydict)
+```
+# not common to both series A and Series B
+```python
+ser1 = pd.Series([1,2,3,4,5])
+ser2 = pd.Series([4,5,6,7,8])
+ser_u = pd.Series((np.union1d(ser1,ser2))
+ser_i = pd.Series((np.intersect1d(ser1,ser2))
+ser_u[~ser_u.isin(ser_i)]
+0    1
+1    2
+2    3
+5    6
+6    7
+7    8
+>>> print(ser_u)
+0    1
+1    2
+2    3
+3    4
+4    5
+5    6
+6    7
+7    8
+>>> print(ser_i)
+0    4
+1    5
+```
