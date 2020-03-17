@@ -125,3 +125,12 @@ link=https://doc.google.com/...
 source=StringIO.StringIO(requests.get(link).content))
 data=pd.read_csv(source)
 ```
+# Sort an array by the (n-1)th column
+```python
+X=np.array([[1,2,3],[0,5,2],[2,3,4]])
+X[X[:,1].argsort()]
+#output:
+array([[2, 1, 4],
+       [1, 2, 3],
+       [0, 5, 2]])
+```
