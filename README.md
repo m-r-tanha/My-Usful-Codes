@@ -3,6 +3,13 @@
 ```python
 import itertools
 [f[i][j] for i,j in itertools.product(range(t), range(int(n)))]
+
+[x for x in range(20) if x%2 == 0]
+
+# To replace two values
+a=10
+b=5
+a,b = b,a
 ```
 ## Decorative Wrapper
 
