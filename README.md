@@ -270,4 +270,11 @@ if __name__ == "__main__":
 
     # Explained variance
     print("Explained variance = %s" % metrics.explainedVariance)
+    
+    # Output
+MSE = 103.30968681818085
+RMSE = 10.164137288436281
+R-squared = 0.027639110967836777
+MAE = 8.148691907953307
+Explained variance = 2.888395201717894
 ```
