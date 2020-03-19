@@ -230,3 +230,44 @@ if __name__ == "__main__":
 
     sc.stop()
  ```
+ # Spark Linear Regression
+```python
+from pyspark.mllib.regression import LabeledPoint, LinearRegressionWithSGD
+from pyspark.mllib.evaluation import RegressionMetrics
+from pyspark.mllib.linalg import DenseVector
+from pyspark import SparkContext
+
+if __name__ == "__main__":
+    sc = SparkContext(appName="Regression Metrics Example")
+
+    # Load and parse the data
+    def parsePoint(line):
+        values = line.split()
+        return LabeledPoint(float(values[0]),
+                            DenseVector([float(x.split(':')[1]) for x in values[1:]]))
+
+    data = sc.textFile("E:\Hadoop\spark-3.0.0-preview2-bin-hadoop2.7\data\mllib\sample_linear_regression_data.txt")
+    parsedData = data.map(parsePoint)
+
+    # Build the model
+    model = LinearRegressionWithSGD.train(parsedData)
+
+    # Get predictions
+    valuesAndPreds = parsedData.map(lambda p: (float(model.predict(p.features)), p.label))
+
+    # Instantiate metrics object
+    metrics = RegressionMetrics(valuesAndPreds)
+
+    # Squared Error
+    print("MSE = %s" % metrics.meanSquaredError)
+    print("RMSE = %s" % metrics.rootMeanSquaredError)
+
+    # R-squared
+    print("R-squared = %s" % metrics.r2)
+
+    # Mean absolute error
+    print("MAE = %s" % metrics.meanAbsoluteError)
+
+    # Explained variance
+    print("Explained variance = %s" % metrics.explainedVariance)
+```
