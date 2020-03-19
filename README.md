@@ -209,11 +209,11 @@ from pyspark.mllib.clustering import KMeans, KMeansModel
 if __name__ == "__main__":
     sc = SparkContext(appName="KMeansExample")  # SparkContext
 
-    # Load and parse the data
+    # Load and parse the data (create RDD)
     data = sc.textFile("E:\Hadoop\spark-3.0.0-preview2-bin-hadoop2.7\data\mllib\kmeans_data.txt")
     parsedData = data.map(lambda line: array([float(x) for x in line.split(' ')]))
 
-    # Build the model (cluster the data)
+    # Build the model (cluster the data) (Create RDD Pipeline)
     clusters = KMeans.train(parsedData, 2, maxIterations=10, initializationMode="random")
 
     # Evaluate clustering by computing Within Set Sum of Squared Errors
@@ -246,7 +246,9 @@ if __name__ == "__main__":
         return LabeledPoint(float(values[0]),
                             DenseVector([float(x.split(':')[1]) for x in values[1:]]))
 
+    #(create RDD)
     data = sc.textFile("E:\Hadoop\spark-3.0.0-preview2-bin-hadoop2.7\data\mllib\sample_linear_regression_data.txt")
+    #(create RDD Pipeline)
     parsedData = data.map(parsePoint)
 
     # Build the model
