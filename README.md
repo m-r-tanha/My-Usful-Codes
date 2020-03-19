@@ -229,6 +229,8 @@ if __name__ == "__main__":
     sameModel = KMeansModel.load(sc, "target/org/apache/spark/PythonKMeansExample/KMeansModel")
 
     sc.stop()
+    # Output 
+    Within Set Sum of Squared Error = 0.6928203230275529
  ```
  # Spark Linear Regression
 ```python
