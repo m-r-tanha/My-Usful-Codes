@@ -6,7 +6,7 @@ import itertools
 
 [x for x in range(20) if x%2 == 0]
 
-# To replace two values
+# Trick to replace two values
 a=10
 b=5
 a,b = b,a
