@@ -34,6 +34,11 @@ def counting(n):
   n+=1
    
 ```
+## Change cell color in Excel file
+
+![Code](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/0.png)
+![result]()
+
 ## Default Function
 
 ```python
@@ -83,7 +88,7 @@ Return type: < type 'enumerate' >
 ```python
 Table=pd.pivot_table(data,values=['CSSR','DCR],index=['Province'], aggfunc={'CSSR':[max, min],'DCR': [lambda x: np.percentage(x,90)]}
 ```
-# Print types
+## Print types
 ```python
 print(*range(10),sep ='')
 [print('YES' if re.match(r'[789]\d{9}$',input()) else 'NO' for _ in range(int(input))] #To find Phone Number
@@ -114,7 +119,7 @@ Number	       Format    	Output	       Description
 
 ```
 
-# General Code
+## General Code
 ```python
 string = "geeks for geeks geeks geeks geeks" 
 print(string.replace("geeks", "GeeksforGeeks", 3)) 
@@ -123,7 +128,7 @@ list.remove(element) # Remove the first element in the list
 del list[start:end] # Delete a range of elements
 ```
 
-# Define a function that takes variable number of arguments
+## Define a function that takes variable number of arguments
 ```python
 def func (*var):
   for i in var:
@@ -132,7 +137,7 @@ def func (*var):
 func(1)
 func(2,4,56)
 ```
-# Append, Concatenate, Vstack
+## Append, Concatenate, Vstack
 
 ![test](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/append.png)
 
@@ -140,16 +145,16 @@ the vstack is the correct answer,
 the concatenate works on two same dimensional array, 
 and append doesn't work on array
 
-# Rgression and Classification
+## Rgression and Classification
 ![class_regra](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/classification_regression.png)
 
-# Read CSV file from a link
+## Read CSV file from a link
 ```python
 link=https://doc.google.com/...
 source=StringIO.StringIO(requests.get(link).content))
 data=pd.read_csv(source)
 ```
-# Sort an array by the (n-1)th column
+## Sort an array by the (n-1)th column
 ```python
 X=np.array([[1,2,3],[0,5,2],[2,3,4]])
 X[X[:,1].argsort()]
@@ -158,7 +163,7 @@ array([[2, 1, 4],
        [1, 2, 3],
        [0, 5, 2]])
 ```
-# Create a Series from a list, numpy array and dictionary
+## Create a Series from a list, numpy array and dictionary
 ```python
 mylist=list('abcdefghijklmnopqrstuvwxyz')
 myarr=np.arange(26)
@@ -167,7 +172,7 @@ ser1=pd.Series(mylist)
 ser2=pd.Series(myarr)
 ser3=pd.Series(mydict)
 ```
-# not common to both series A and Series B
+## not common to both series A and Series B
 ```python
 ser1 = pd.Series([1,2,3,4,5])
 ser2 = pd.Series([4,5,6,7,8])
@@ -193,7 +198,7 @@ ser_u[~ser_u.isin(ser_i)]
 0    4
 1    5
 ```
-# How to reverese the rows of a data frame
+## How to reverese the rows of a data frame
 ```python
  df = pd.DataFrame(np.arange(25).reshape(5,-1))
   >>> df
@@ -214,7 +219,7 @@ ser_u[~ser_u.isin(ser_i)]
 
  ```
  
- # Spark (Mlib) Kmeans
+ ## Spark (Mlib) Kmeans
  
  ```python
 from __future__ import print_function
@@ -249,7 +254,7 @@ if __name__ == "__main__":
     # Output 
     Within Set Sum of Squared Error = 0.6928203230275529
  ```
- # Spark Linear Regression
+ ## Spark (Linear Regression)
 ```python
 from pyspark.mllib.regression import LabeledPoint, LinearRegressionWithSGD
 from pyspark.mllib.evaluation import RegressionMetrics
