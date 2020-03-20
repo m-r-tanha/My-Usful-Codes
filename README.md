@@ -36,8 +36,8 @@ def counting(n):
 ```
 ## Change cell color in Excel file
 
-![Code](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/0.png)
-![result]()
+![Code](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/1.png)
+![result](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/0.png)
 
 ## Default Function
 
