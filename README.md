@@ -15,6 +15,12 @@ numpy.random.uniform(1,5,(2,3))
 #output:
 array([[1.7859482 , 1.85782785, 1.12609184],
        [4.97698711, 3.74835621, 1.23437712]])
+
+a=np.random.standard_normal((2,2)) #generate distributed normal
+np.mean(b)
+np.median(b)
+np.var(b) #varians
+np.std(b) #standard deviation
 ```
 ## Decorative Wrapper
 
