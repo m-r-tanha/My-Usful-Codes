@@ -102,7 +102,7 @@ Table=pd.pivot_table(data,values=['CSSR','DCR],index=['Province'], aggfunc={'CSS
 ## Print types
 ```python
 print(*range(10),sep ='')
-[print('YES' if re.match(r'[789]\d{9}$',input()) else 'NO' for _ in range(int(input))] #To find Phone Number
+[print('YES' if re.match(r'[789]\d{9}$',input()) else 'NO')] #To find Phone Number
 
 List=['T','A','N','H','A']
 print(''.join(List))
