@@ -1,6 +1,12 @@
 # My-Usful-Codes
 
 ```python
+df.loc[df['column_name'] == some_value]
+df['column_name'] >= A & df['column_name'] <= B
+df.loc[df['column_name'] != some_value]
+```
+
+```python
 import itertools
 [f[i][j] for i,j in itertools.product(range(t), range(int(n)))]
 
