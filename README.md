@@ -2,6 +2,10 @@
 
 ## to Creat Latex Formula as Markdown (https://www.codecogs.com/latex/eqneditor.php)
 
+```python
+outlier = set(laser_data_cart.index).symmetric_difference(set(inlier_heat.index))
+outlier = laser_data_cart[laser_data_cart.index.isin(outlier)]
+```
 
 ```python
 df.loc[df['column_name'] == some_value]
