@@ -328,3 +328,36 @@ R-squared = 0.027639110967836777
 MAE = 8.148691907953307
 Explained variance = 2.888395201717894
 ```
+## Open Zipfile
+```python
+from unrar import rarfile
+rar = rarfile.RarFile('H:\Farafan\data\March\Cell.rar')
+rar.namelist()
+
+def Open_rar():
+        import os, zipfile, pyunpack
+        basis_folder =  r'H:\Farafan\data\March'
+
+        for root, dirs, files in os.walk(basis_folder):
+            for filename in files:
+                if filename.endswith(".rar") :
+                    print('RAR:'+os.path.join(root,filename))
+                elif filename.endswith(".zip"):
+                    print('ZIP:'+os.path.join(root,filename))
+                name = os.path.splitext(os.path.basename(filename))[0]
+                if filename.endswith(".rar") or filename.endswith(".zip"):
+                    try:
+                        arch = pyunpack.Archive(os.path.join(root,filename))
+                        # os.mkdir(name)
+                        arch.extractall(directory=root)
+                        os.remove(os.path.join(root,filename))
+                    except Exception as e:
+                        print("ERROR: BAD ARCHIVE "+os.path.join(root,filename))
+                        print(e)
+                        try:
+                            # os.path.join(root,filename)os.remove(filename)
+                            pass
+                        except OSError as e: # this would be "except OSError, e:" before Python 2.6
+                            if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
+                                raise # re-raise exception if a different error occured
+ ```
