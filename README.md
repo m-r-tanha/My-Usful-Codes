@@ -361,3 +361,17 @@ def Open_rar():
                             if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
                                 raise # re-raise exception if a different error occured
  ```
+
+### magine a machine learning problem where you have 20 classes and about 7000 sparse boolean features. I want to figure out what the 20 most unique features per class are. In other words, features that are used a lot in a specific class but aren't used in other classes, or hardly used. What would be a good feature selection algorithm or heuristic that can do this?
+
+When you train a Logistic Regression multi-class classifier the train model is a num_class x num_feature matrix which is called the model where its [i,j] value is the weight of feature j in class i. The indices of features are the same as your input feature matrix.
+
+In scikit-learn you can access to the parameters of the model If you use scikit-learn classification algorithms you'll be able to find the most important features per class by:
+```python
+clf = SGDClassifier(loss='log', alpha=regul, penalty='l1', l1_ratio=0.9, learning_rate='optimal', n_iter=10, shuffle=False, n_jobs=3, fit_intercept=True)
+clf.fit(X_train, Y_train)
+for i in range(0, clf.coef_.shape[0]):
+    top20_indices = np.argsort(clf.coef_[i])[-20:]
+    print top20_indices
+ ```
+ clf.coef_ is the matrix containing the weight of each feature in each class so clf.coef_[0][2] is the weight of the third feature in the first class. If when you build your feature matrix you keep track of the index of each feature in a dictionary where dic[id] = feature_name you'll be able to retrieve the name of the top feature using that dictionary.
