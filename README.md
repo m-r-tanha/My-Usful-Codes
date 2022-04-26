@@ -379,7 +379,8 @@ for i in range(0, clf.coef_.shape[0]):
 ## OOP (Object-Oriented Programming)
 Python, like every other object-oriented language, allows you to define classes to create objects.
 What is Encapsulation?
-#### Encapsulation is the process of preventing clients from accessing certain properties, which can only be accessed through specific methods.
+#### Encapsulation
+is the process of preventing clients from accessing certain properties, which can only be accessed through specific methods.
 Let's introduce a private attribute called __discount in the Book class.
 
  ```python
@@ -402,3 +403,38 @@ class Book:
     def __repr__(self):
         return f"Book: {self.title}, Quantity: {self.quantity}, Author: {self.author}, Price: {self.get_price()}"
 ```
+#### Inheritance?
+The subclass or child class is the class that inherits. The superclass or parent class is the class from which methods and/or attributes are inherited.
+
+```python
+class Book:
+    def __init__(self, title, quantity, author, price):
+        self.title = title
+        self.quantity = quantity
+        self.author = author
+        self.__price = price
+        self.__discount = None
+
+    def set_discount(self, discount):
+        self.__discount = discount
+
+    def get_price(self):
+        if self.__discount:
+            return self.__price * (1-self.__discount)
+        return self.__price
+
+    def __repr__(self):
+        return f"Book: {self.title}, Quantity: {self.quantity}, Author: {self.author}, Price: {self.get_price()}"
+
+
+class Novel(Book):
+    def __init__(self, title, quantity, author, price, pages):
+        super().__init__(title, quantity, author, price)
+        self.pages = pages
+
+
+class Academic(Book):
+    def __init__(self, title, quantity, author, price, branch):
+        super().__init__(title, quantity, author, price)
+        self.branch = branch
+``` 
