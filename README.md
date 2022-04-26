@@ -438,3 +438,14 @@ class Academic(Book):
         super().__init__(title, quantity, author, price)
         self.branch = branch
 ``` 
+### Polymorphism?
+a subclass can use a method from its superclass as is or modify it as needed.
+```python
+class Academic(Book):
+    def __init__(self, title, quantity, author, price, branch):
+        super().__init__(title, quantity, author, price)
+        self.branch = branch
+
+    def __repr__(self):
+        return f"Book: {self.title}, Branch: {self.branch}, Quantity: {self.quantity}, Author: {self.author}, Price: {self.get_price()}"
+```
