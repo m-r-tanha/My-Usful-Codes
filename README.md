@@ -449,3 +449,8 @@ class Academic(Book):
     def __repr__(self):
         return f"Book: {self.title}, Branch: {self.branch}, Quantity: {self.quantity}, Author: {self.author}, Price: {self.get_price()}"
 ```
+### map, filter
+- map(lambda x: x**2, items)
+- filter(lambda x: x < 0, number_list)
+- the risult would be something like: <map at 0x0939849348>
+- to solve it we should use list like: list(map(lambda x: x**2, items))
