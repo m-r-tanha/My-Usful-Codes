@@ -379,7 +379,7 @@ for i in range(0, clf.coef_.shape[0]):
 ## OOP (Object-Oriented Programming)
 Python, like every other object-oriented language, allows you to define classes to create objects.
 What is Encapsulation?
-Encapsulation is the process of preventing clients from accessing certain properties, which can only be accessed through specific methods.
+#### Encapsulation is the process of preventing clients from accessing certain properties, which can only be accessed through specific methods.
 Let's introduce a private attribute called __discount in the Book class.
 
  ```python
@@ -401,5 +401,4 @@ class Book:
 
     def __repr__(self):
         return f"Book: {self.title}, Quantity: {self.quantity}, Author: {self.author}, Price: {self.get_price()}"
-        
-    ```
+```
