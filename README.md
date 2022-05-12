@@ -522,3 +522,17 @@ Return ‘string’ object type
 | Values can be accessed by subscript   |Values can be accessed by using “.”(dot) or “[]”|
 |Can use a single or double quote for the string object| The double quotation is necessary for the string object     |
 | Returns ‘dict’ object type    |	Return ‘string’ object type |
+
+### Generator  Yield
+
+```python
+def iter_leafs(d):
+    for key, val in d.items():
+        if isinstance(val, dict):
+            yield from iter_leafs(val)
+        else:
+            yield val
+
+d = {'a':{'a':{'y':2}},'b':{'c':{'a': 5}},'x':{'a':{'m':6, 'l': 9}}}
+list(iter_leafs(d))
+```
