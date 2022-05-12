@@ -535,4 +535,15 @@ def iter_leafs(d):
 
 d = {'a':{'a':{'y':2}},'b':{'c':{'a': 5}},'x':{'a':{'m':6, 'l': 9}}}
 list(iter_leafs(d))
+output: [2, 5, 6, 9]
+#-------------------------
+def iter_leafs(d, keys=[]):
+    for key, val in d.items():
+        if isinstance(val, dict):
+            yield from iter_leafs(val, keys+ [key] )
+        else:
+            yield keys + [key], val
+l1 =list(iter_leafs(d))
+print(l1)
+output: [(['a', 'a', 'y'], 2), (['b', 'c', 'a'], 5), (['x', 'a', 'm'], 6), (['x', 'a', 'l'], 9)]
 ```
