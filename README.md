@@ -466,6 +466,16 @@ class Academic(Book):
 |Can use a single or double quote for the string object| The double quotation is necessary for the string object     |
 | Returns ‘dict’ object type    |	Return ‘string’ object type |
 
+
+### Difference between git pull and git fetch
+| Git Fetch        | Git Pull    | 
+|--------------|-----------|
+|Gives the information of a new change from a remote repository without merging into the current branch| Keys can be only strings|Brings the copy of all the changes from a remote repository and merges them into the current branch |
+
+|Repository data is updated in the .git directory| The local repository is updated directly   |
+| Review of commits and changes can be done   |Updates the changes to the local repository immediately.|
+|No possibility of merge conflicts.|Merge conflicts are possible if the remote and the local repositories have done changes at the same place.    |
+
 ### Generator  Yield
 
 ```python
