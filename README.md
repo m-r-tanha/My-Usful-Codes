@@ -500,3 +500,11 @@ l1 =list(iter_leafs(d))
 print(l1)
 output: [(['a', 'a', 'y'], 2), (['b', 'c', 'a'], 5), (['x', 'a', 'm'], 6), (['x', 'a', 'l'], 9)]
 ```
+## Save and Load JSON
+```python
+with open('output.json', 'w+') as f:
+    json.dump(lista_items, f)
+    
+with open('input.json') as f:
+    json.load(f)   
+```
