@@ -508,3 +508,7 @@ with open('output.json', 'w+') as f:
 with open('input.json') as f:
     json.load(f)   
 ```
+### Add a column based on other columns in a data frame
+```python
+df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = True)
+```
