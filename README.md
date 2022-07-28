@@ -500,13 +500,20 @@ l1 =list(iter_leafs(d))
 print(l1)
 output: [(['a', 'a', 'y'], 2), (['b', 'c', 'a'], 5), (['x', 'a', 'm'], 6), (['x', 'a', 'l'], 9)]
 ```
-## Save and Load JSON
+## Save and Load JSON and PKL
 ```python
+import pickle
 with open('output.json', 'w+') as f:
     json.dump(lista_items, f)
     
 with open('input.json') as f:
-    json.load(f)   
+    df = json.load(f)   
+    
+with open('input.json', 'rb') as f:
+    PKL = pickle.load(f)
+    
+with open('output.json', 'wb') as f:
+    pickle.dump(saved_file, f)
 ```
 ### Add a column based on other columns in a data frame
 ```python
