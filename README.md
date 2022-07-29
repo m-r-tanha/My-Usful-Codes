@@ -509,10 +509,10 @@ with open('output.json', 'w+') as f:
 with open('input.json') as f:
     df = json.load(f)   
     
-with open('input.json', 'rb') as f:
+with open('input.pkl', 'rb') as f:
     PKL = pickle.load(f)
     
-with open('output.json', 'wb') as f:
+with open('output.pkl', 'wb') as f:
     pickle.dump(saved_file, f)
 ```
 ### Add a column based on other columns in a data frame
