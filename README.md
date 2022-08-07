@@ -11,6 +11,8 @@ outlier = laser_data_cart[laser_data_cart.index.isin(outlier)]
 df.loc[df['column_name'] == some_value]
 df['column_name'] >= A & df['column_name'] <= B
 df.loc[df['column_name'] != some_value]
+
+df1 = df1[df1.team_id.isin(df2.team_id)]
 ```
 
 ```python
