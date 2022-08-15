@@ -521,3 +521,4 @@ with open('output.pkl', 'wb') as f:
 ```python
 df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = True)
 ```
+pip install --no-cache-dir -I matplotlib==3.2.1
