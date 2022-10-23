@@ -521,6 +521,7 @@ with open('output.pkl', 'wb') as f:
 ```python
 df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = True)
 ```
+- conda create -n apo_new
 - pip install --no-cache-dir -I matplotlib==3.2.1
 - conda env remove -n "env_name"
 - conda info -- envs
