@@ -530,6 +530,8 @@ df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = Tr
        - numpy>=1.15.0, <1.21.0
        - pandas
        - pytest==4.0.1
-- flake8 path_folder
-- python -m flake8 test.py
-- flake8 --max-complexity 12 (This feature is quite useful to detect over-complex code. According to McCabe, anything that goes beyond 10 is too complex. See https://en.wikipedia.org/wiki/Cyclomatic_complexity.)
+-flake8:
+       - flake8 path_folder
+       - python -m flake8 test.py
+       - flake8 --max-complexity 12 (This feature is quite useful to detect over-complex code. According to McCabe, anything that goes beyond 10 is too complex. See https://en.wikipedia.org/wiki/Cyclomatic_complexity.)
+       - https://flake8.pycqa.org/en/2.5.5/
