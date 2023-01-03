@@ -537,3 +537,23 @@ df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = Tr
   - python -m flake8 test.py
   - flake8 --max-complexity 12 (This feature is quite useful to detect over-complex code. According to McCabe, anything that goes beyond 10 is too complex. See https://en.wikipedia.org/wiki/Cyclomatic_complexity.)
   - https://flake8.pycqa.org/en/2.5.5/
+### Feature Transformation and Scaling Techniques
+
+```python
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MaxAbsScaler
+from sklearn.preprocessing import RobustScaler
+from sklearn.preprocessing import QuantileTransformer
+from sklearn.preprocessing import PowerTransformer
+from sklearn.preprocessing import Normalizer
+from sklearn.preprocessing import FunctionTransformer
+
+SCALER = [MinMaxScaler(feature_range=(5, 10)), StandardScaler(), MaxAbsScaler(), 
+RobustScaler(), QuantileTransformer(), PowerTransformer(method = 'box-cox' or 'yeo-johnson'),
+Normalizer(norm = 'l2'), FunctionTransformer(np.log2, validate = True)]
+
+scaler = SCALER
+
+df_scaled[col_names] = scaler.fit_transform(features.values)
+```
