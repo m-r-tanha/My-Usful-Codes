@@ -556,4 +556,27 @@ Normalizer(norm = 'l2'), FunctionTransformer(np.log2, validate = True)]
 scaler = SCALER
 
 df_scaled[col_names] = scaler.fit_transform(features.values)
+
+#sample
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.svm import SVC
+
+data = datasets.load_iris()
+X = data.data
+y = data.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+
+scaler = MinMaxScaler()
+X_train_scaled = scaler.fit_transform(X_train) # fit it on the training data
+
+model = SVC()
+model.fit(X_train_scaled, y_train)
+
+X_test_scaled = scaler.transform(X_test) # apply it on the test data
+y_pred = model.predict(X_test_scaled) # model prediction on the scaled test set
+
 ```
