@@ -112,7 +112,9 @@ Return type: < type 'enumerate' >
 ## Pivot_Table
 
 ```python
-Table=pd.pivot_table(data,values=['CSSR','DCR],index=['Province'], aggfunc={'CSSR':[max, min],'DCR': [lambda x: np.percentage(x,90)]}
+Table=pd.pivot_table(data,values=['CSSR','DCR'],index=['Province'], aggfunc={'CSSR':[max, min],'DCR': [lambda x: np.percentage(x,90)]}
+#Select columns in multiindex
+Table.iloc[:, Table.columns.get_level_values(1)=='<lambda_0>']
 ```
 ## Print types
 ```python
