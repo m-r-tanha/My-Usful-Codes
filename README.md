@@ -1,5 +1,9 @@
 # My-Usful-Codes
 
+### concatinate two columns:
+```python
+df_RHIM["Vessel_Campaign"] = df_RHIM["Vessel"].map(str) + "_" + df_RHIM["Campaign"].map(str)
+```
 ## to Creat Latex Formula as Markdown (https://www.codecogs.com/latex/eqneditor.php)
 
 ```python
