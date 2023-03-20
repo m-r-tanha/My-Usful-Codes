@@ -584,4 +584,4 @@ X_test_scaled = scaler.transform(X_test) # apply it on the test data
 y_pred = model.predict(X_test_scaled) # model prediction on the scaled test set
 
 ```
-![SQL](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/sql.png)
+![SQL](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/sqlpng.png)
