@@ -1,5 +1,8 @@
 # My-Usful-Codes
 
+### LINK:
+https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+
 ### concatinate two columns:
 ```python
 df_RHIM["Vessel_Campaign"] = df_RHIM["Vessel"].map(str) + "_" + df_RHIM["Campaign"].map(str)
