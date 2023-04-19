@@ -588,3 +588,8 @@ y_pred = model.predict(X_test_scaled) # model prediction on the scaled test set
 
 ```
 ![SQL](https://github.com/m-r-tanha/My-Usful-Codes/blob/master/sqlpng.png)
+
+
+
+### What is SDK vs API?
+An API is a set of libraries that make up the core language that you can work with out of the box, whereas an SDK is a development kit that facilitates usages of an API. Conceptually both are a way for your program to interface with and control the resources provided by another piece of software
