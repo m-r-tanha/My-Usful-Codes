@@ -544,6 +544,10 @@ df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = Tr
   - python -m flake8 test.py
   - flake8 --max-complexity 12 (This feature is quite useful to detect over-complex code. According to McCabe, anything that goes beyond 10 is too complex. See https://en.wikipedia.org/wiki/Cyclomatic_complexity.)
   - https://flake8.pycqa.org/en/2.5.5/
+  
+.\conda env update --name apo --file H:/RHI/Codes/ds-steel/infrastructure/environment.yml
+ 
+ 
 ### Feature Transformation and Scaling Techniques
 
 ```python
