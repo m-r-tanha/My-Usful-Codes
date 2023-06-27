@@ -532,6 +532,7 @@ df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = Tr
 ```
 - conda create -n apo_new
 - python -V
+- where python
 - pip install --no-cache-dir -I matplotlib==3.2.1
 - conda env remove -n "env_name"
 - conda info -- envs
