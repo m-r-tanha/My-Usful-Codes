@@ -530,6 +530,7 @@ with open('output.pkl', 'wb') as f:
 ```python
 df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = True)
 ```
+- echo %PATH%
 - conda create -n apo_new
 - python -V
 - where python
