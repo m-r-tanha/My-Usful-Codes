@@ -28,6 +28,28 @@ import itertools
 
 [x for x in range(20) if x%2 == 0]
 
+import itertools
+a = [1, 2]
+b = ['a', 'b']
+for combination in itertools.product(a, b):
+    print(combination)
+
+result:
+(1, 'a')
+(1, 'b')
+(2, 'a')
+(2, 'b')
+#--------------------
+a = [1, 2, 3]
+b = ['a', 'b', 'c']
+for pair in zip(a, b):
+    print(pair)
+result:
+(1, 'a')
+(2, 'b')
+(3, 'c')
+
+
 # Trick to replace two values
 a=10
 b=5
