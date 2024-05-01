@@ -28,6 +28,8 @@ import itertools
 
 [x for x in range(20) if x%2 == 0]
 
+[x if x != 0 else min_cluster_distance for x in cluster_distance]
+
 import itertools
 a = [1, 2]
 b = ['a', 'b']
