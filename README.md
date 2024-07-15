@@ -556,6 +556,7 @@ df[['_date', 'cell_n']] = df['Date_Cell'].astype(str).str.split('_', expand = Tr
 ```
 - echo %PATH%
 - conda create -n apo_new
+- conda create --name geovis python=3.7 
 - python -V or python --version
 - where python
 - conda install -c conda-forge mergedeep==1.3.0
