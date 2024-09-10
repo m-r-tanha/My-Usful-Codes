@@ -4,6 +4,8 @@
 ```python
 import sys
 !{sys.executable} -m pip install your_package_name
+
+pip show your_package_name
 ```
 ### LINK:
 https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
