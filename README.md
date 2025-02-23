@@ -5,6 +5,9 @@ os.path.dirname(__file__)           # Gets the directory of the current script.
 os.path.abspath(os.path.join(..., '..'))    # Moves up one level to the project root.
 os.path.join(..., '..', '..') # Moves two levels up.
 os.path.join(..., "another_subdir") #      Appends the target folder.
+#in practis
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+file_path = os.path.join(project_root, "another_subdir", "myfile.txt")
 ```
 
 ### Can't import the installed package in Python environment of jupyter notebook
