@@ -3,6 +3,7 @@
 ```python
 os.path.dirname(__file__)           # Gets the directory of the current script.
 os.path.abspath(os.path.join(..., '..'))    # Moves up one level to the project root.
+os.path.join(..., '..', '..') # Moves two levels up.
 os.path.join(..., "another_subdir") #      Appends the target folder.
 ```
 
