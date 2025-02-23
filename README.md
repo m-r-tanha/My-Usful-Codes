@@ -1,5 +1,11 @@
 # My-Usful-Codes
 
+```python
+os.path.dirname(__file__)           # Gets the directory of the current script.
+os.path.abspath(os.path.join(..., '..'))    # Moves up one level to the project root.
+os.path.join(..., "another_subdir") #      Appends the target folder.
+```
+
 ### Can't import the installed package in Python environment of jupyter notebook
 ```python
 import sys
