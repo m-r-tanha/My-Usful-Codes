@@ -1,5 +1,10 @@
 # My-Usful-Codes
 
+To delete unused function and variable in python:
+```python
+python -m vulture .
+```
+
 ```python
 os.path.dirname(__file__)           # Gets the directory of the current script.
 os.path.abspath(os.path.join(..., '..'))    # Moves up one level to the project root.
