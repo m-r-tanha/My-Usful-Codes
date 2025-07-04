@@ -5,6 +5,11 @@ To install the requirements.txt file into a .venv environment in PyCharm
 Open your project in PyCharm
 .venv\Scripts\activate
 pip install -r requirements.txt
+
+Set interprator in pycharm:
+- Choose "Existing environment"
+- Click the folder icon and browse to:
+- ./.venv/Scripts/python.exe (Windows)
 ```
 
 To delete unused function and variable in python:
