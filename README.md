@@ -1,5 +1,12 @@
 # My-Usful-Codes
 
+To install the requirements.txt file into a .venv environment in PyCharm
+```python
+Open your project in PyCharm
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
 To delete unused function and variable in python:
 ```python
 python -m vulture .
