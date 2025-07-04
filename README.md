@@ -1,4 +1,9 @@
 # My-Usful-Codes
+Download YouTube video:
+```python
+pip install -U yt-dlp
+python -m yt_dlp "https://www.youtube.com/watch?v=Qqo7vFbf1rQ"
+```
 
 To install the requirements.txt file into a .venv environment in PyCharm
 ```python
