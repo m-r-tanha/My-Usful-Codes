@@ -1,4 +1,43 @@
 # My-Usful-Codes
+
+### command to run in terminal to release and kill the port that is using in flask
+
+```python
+one-line for any port:
+# Replace 5000 with your actual port number
+PORT=5000; lsof -ti:$PORT | xargs kill -9
+
+
+lsof -ti:5000
+# Find and kill process on port 5000 (change 5000 to your port)
+lsof -ti:5000 | xargs kill -9
+
+# Or in two steps:
+# First, find the PID:
+lsof -ti:5000
+
+# Then kill it:
+kill -9 <PID>
+
+Option 2:
+# Kill process on port 5000
+fuser -k 5000/tcp
+
+# Or with sudo if needed:
+sudo fuser -k 5000/tcp
+
+Option3:
+# Find PID using netstat:
+netstat -tlnp | grep :5000
+
+# Or using ss (more modern):
+ss -tlnp | grep :5000
+
+# Then kill the PID shown
+kill -9 <PID>
+
+
+```
 Download YouTube video:
 ```python
 pip install -U yt-dlp
