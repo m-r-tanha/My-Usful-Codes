@@ -1,8 +1,10 @@
 # My-Usful-Codes
 
+### Mount a local folder into the VM
 
 ```
 multipass mount /path/to/local/folder myVM:/path/in/vm
+Example: multipass mount ~/projects/underwater myVM:/home/ubuntu/underwater
 ```
 
 ### command to run in terminal to release and kill the port that is using in flask
