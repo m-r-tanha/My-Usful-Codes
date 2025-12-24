@@ -1,5 +1,10 @@
 # My-Usful-Codes
 
+
+```
+multipass mount /path/to/local/folder myVM:/path/in/vm
+```
+
 ### command to run in terminal to release and kill the port that is using in flask
 
 ```python
