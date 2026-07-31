@@ -1,10 +1,10 @@
 # My-Usful-Codes
-
+```python
 sudo mv Cursor-*.AppImage /opt/cursor/cursor.AppImage
 sudo chmod +x /opt/cursor/cursor.AppImage
 /opt/cursor/cursor.AppImage --no-sandbox
 /opt/cursor/usr/share/cursor/cursor.AppImage --no-sandbox
-
+```
 
 برای رفع تحریم خارجی معمولاً از DNSهای این سرویس‌ها استفاده می‌شود:
 
