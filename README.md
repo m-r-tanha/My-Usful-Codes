@@ -1,4 +1,11 @@
 # My-Usful-Codes
+
+For using the Code base of Claude
+```python
+cd ~/path/to/portia_paper
+claude
+```
+
 ```python
 sudo mv Cursor-*.AppImage /opt/cursor/cursor.AppImage
 sudo chmod +x /opt/cursor/cursor.AppImage
